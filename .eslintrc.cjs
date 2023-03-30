@@ -2,28 +2,21 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    node: true,
+    node: true
   },
   settings: {
     react: {
-      version: 'detect',
-    },
+      version: 'detect'
+    }
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:react-hooks/recommended',
-    'prettier',
-    'plugin:react/jsx-runtime',
-  ],
+  extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:@typescript-eslint/recommended', 'plugin:react-hooks/recommended', 'prettier', 'plugin:react/jsx-runtime', 'plugin:storybook/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     },
     ecmaVersion: 12,
-    sourceType: 'module',
+    sourceType: 'module'
   },
   plugins: ['react', '@typescript-eslint', 'react-hooks', 'prettier'],
   rules: {
@@ -31,6 +24,6 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     'react/prop-types': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
-    'prettier/prettier': 'warn',
-  },
+    'prettier/prettier': 'warn'
+  }
 };
